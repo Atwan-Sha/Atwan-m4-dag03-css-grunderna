@@ -54,38 +54,6 @@ Klassen `.knapp` ska se ut som en knapp: `display: inline-block`, bakgrund, vit 
 
 Högerklicka på ett kort → *Inspektera*. Hitta boxmodell-diagrammet (fliken *Computed*). Ändra `padding` direkt i DevTools och se vad som händer. Rita av boxmodellen för ett `article` i en kommentar i CSS-filen.
 
-## AI-spåret (nivå 1: Förklara och granska)
-
-**Förutsäg innan du kollar** (cirka 20 minuter, efter att du gjort din egen lösning)
-
-AI är din granskare och förklarare. AI skriver inte din lösning. Att gissa först och kontrollera sedan är det snabbaste sättet att bygga en riktig bild av hur boxmodellen fungerar.
-
-Regler: egen lösning först, du ska kunna förklara varje rad, och du loggar i `docs/ai-logg.md` i `mitt-projekt`. Reglerna finns i `AI-REGLER.md` i `mitt-projekt`.
-
-1. Välj tre element på din sida. Räkna själv ut deras totala bredd (content + padding + border).
-2. Be AI räkna ut samma sak med prompten nedan.
-3. Mät i DevTools boxmodell-diagram. Vem hade rätt: du, AI eller båda?
-4. Om någon hade fel: förstå exakt var det gick snett.
-5. Skriv resultatet i ai-loggen.
-
-Prompt att utgå från:
-
-```
-Här är min HTML och CSS. Räkna ut
-elementets totala bredd och höjd steg
-för steg (content, padding, border,
-margin). Visa uträkningen.
-
-[klistra in HTML och CSS här]
-```
-
-**Kontrollera med:**
-
-- Klicka på elementet i DevTools och titta på boxmodell-diagrammet.
-- Kontrollera box-sizing: border-box eller content-box?
-
-**I ditt projekt:** Gör samma förutsägelse för tre element i ditt projekt.
-
 ## Kontrollista: så vet du att du är klar
 
 - [ ] `styles.css` är kopplad i båda HTML-filerna.
@@ -95,17 +63,12 @@ margin). Visa uträkningen.
 - [ ] Inga bilder sticker utanför sina kort.
 - [ ] Du kan förklara skillnaden mellan `padding` och `margin`.
 - [ ] Du har pushat till din fork och skickat in länken.
-- [ ] Du har gjort AI-uppgiften och skrivit en post i `docs/ai-logg.md`.
 
 ## Tips om du fastnar
 
 - Inget händer? Kontrollera att filnamn och sökväg i `<link>` stämmer exakt, och att du sparat CSS-filen.
 - Hård refresh i webbläsaren: Ctrl+Shift+R.
 - En regel som inte verkar gälla? Öppna DevTools: överstruken regel betyder att en annan vann.
-
-## Ditt projekt: Dagens steg i `mitt-projekt`
-
-Efter övningen här jobbar du vidare i ditt eget projekt (din design från modul 3). Dagens steg står i `PROJEKTSTEG.md` i ditt repo `mitt-projekt`, under **Dag 3**. Det är där ditt riktiga arbete växer. Övningen här är träningsbanan.
 
 ## Inlämning
 
@@ -114,8 +77,7 @@ Efter övningen här jobbar du vidare i ditt eget projekt (din design från modu
 I formuläret fyller du i:
 
 1. Länk till din fork av det här repot.
-2. Länk till ditt `mitt-projekt`.
-3. Reflektion: Beskriv boxmodellen med egna ord. Vilken av delarna (content, padding, border, margin) förstod du bäst, och vilken var svårast?
+2. Reflektion: Beskriv boxmodellen med egna ord. Vilken av delarna (content, padding, border, margin) förstod du bäst, och vilken var svårast?
 
 ## Vill du mer? (frivilligt)
 
