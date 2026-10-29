@@ -1,5 +1,6 @@
 body {
 	background-color: #fffaf3;
+	margin: 0;
 }
 *,
 *::before,
@@ -9,32 +10,116 @@ body {
 /* Vad det gör: 
 Säkerställer att padding och border 
 ingår i elementets totala bredd och höjd */
-body {
-	margin: 0;
+
+h1,
+h2,
+h3 {
+	color: #3b2418;
 }
+header h1 {
+	color: #ffffff;
+}
+p {
+	color: #222222;
+	line-height: 1.5;
+}
+.price {
+	color: #8c1010;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
 header {
-  background-color: #5b3a29;
-  color:#fffaf3;
-  padding: 16px 24px;
-}
-footer {
-  background-color: #2b1c14;
-  color:#fffaf3;
-  padding: 16px 24px;
+	background-color: #5b3a29;
+	color: #ffffff;
+	padding: 16px 24px;
 }
 nav ul {
-  list-style: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+footer {
+	background-color: #2b1c14;
+	color: #ffffff;
+	padding: 16px 24px;
 }
 
+nav a,
+footer a {
+	color: #ffffff;
+	/* color: #8c1010; */
+	text-decoration: none;
+}
+nav a:hover,
+footer a:hover {
+	text-decoration: underline;
+}
 
-/* Dag 3: grunder och boxmodell. Följ README.md och design.md.
-   TODO 1: box-sizing (överst)
-   TODO 2: body
-   TODO 3: header och footer
-   TODO 4: nav ul (ta bort punkter)
-   TODO 5: article (kort)
-   TODO 6: main (centrerat, max-bredd)
-   TODO 7: .knapp
+#hero {
+	background-color: #f3e3cf;
+	padding: 32px 24px;
+	text-align: center;
+}
+
+article {
+	background-color: #ffffff;
+	border: 1px solid #e3d5c3;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+article:nth-child(even) {
+	background-color: #f9f5f0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 24px;
+}
+/* Vad margin: 0 auto gör: centrerar elementet 
+horisontellt (delar ledigt utrymme) inom sin förälder. */
+
+.btn {
+	background-color: #8c1010;
+	color: #ffffff;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+}
+.btn:hover {
+	background-color: #6f0c0c;
+	cursor: pointer;
+}
+
+/* 
+Steg 8: Boxmodellen avritad från 1a article 
+efter modifikation i devtools
+
+  +----------------------------------------------------------+
+  | margin                            0                      |
+  |   +--------------------------------------------------+   |
+  |   | border                        1                  |   |
+  |   |   +------------------------------------------+   |   |
+  |   |   | padding                  16              |   |   |
+  |   |   |       +------------------------------+   |   |   |
+  |   |   | 100   |       934x398.094            |   |   |   |
+  |   |   |       +------------------------------+   |   |   |
+  |   |   |                          16          |   |   |   |
+  |   |   +------------------------------------------+   |   |
+  |   |                               1                  |   |
+  |   +--------------------------------------------------+   |
+  |                                   16                     |
+  +----------------------------------------------------------+
 */
 
 /* *Så här ska sidan se ut. Följ värdena exakt.
